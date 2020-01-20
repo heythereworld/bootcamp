@@ -11,7 +11,7 @@ When add to cart is clicked, a modal should pop asking the user to input the qua
 The ‘Agree’ and ‘Cancel’ button should be placed as shown in the image below. When agree is clicked, 
 the pop should close and the ‘Add to Cart’ button must now say ‘Checkout now’. For more details see the images below. 
 
-index.html - HTML document for week 1 deluverable
+index.html - HTML document for week 1 deliverable
 main.css - external style sheet
 index.php - required for Heroku hosting of static website
 index.json - required for Heroku hosting of static website
