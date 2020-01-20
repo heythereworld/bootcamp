@@ -1,3 +1,25 @@
+
+      /* Review rating checked */
+      .checked {
+          color: orange;
+      }
+
+      /* Colour swatch circles */
+      .circle {
+          height: 30px;
+          width: 30px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 10px;
+          margin-bottom: 10px;
+      }
+
+      /* Inline block needed so that review count does not go to next line  */
+      .review-count{
+          display: inline-block;
+      }
+
       /* Make the hyperlink text colours black in keeping with feel of specification  */
       a {
           color: black;
@@ -8,28 +30,19 @@
           color: black;
         }
 
-      /* Review rating checked */
-      .checked {
-          color: orange;
-      }
-
-      /* Colour swatch circles */
-      .circle {
-          height: 25px;
-          width: 25px;
-          background-color: #fff;
-          border-radius: 50%;
-          display: inline-block;
-          margin-right: 10px; 
-      }
-
-      /* Inline block needed so that review count does not go to next line  */
-      .review-count{
-          display: inline-block;
-      }
+      /* Styling the cart number button */
+      #cartNumber {
+          background-color: white;
+          color: black;
+          border-radius: 200px;
+          border-width: 1px;
+          border-color: black;
+          width: 75px;
+          height: 50px;
+        }
 
       /* Styling the cart button */
-      button {
+      #cartButton {
           background-color: black;
           color: white;
           border-radius: 200px;
