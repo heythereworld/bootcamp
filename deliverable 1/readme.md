@@ -1,6 +1,8 @@
 Week 1 deliverable for Zaio Bootcamp. 
 HTML, CSS & JS Challenge
 
+Nemesis Team - Chris Pretorius
+
 Create page using HTML, CSS,bootstrap and JavaScript a page that looks like the one on the next page. 
 The Page must be aligned in the Centre. When the user selects a specific colour, the value of the colour 
 on the COLOR label must change. You can name the colours whatever colours you want.
