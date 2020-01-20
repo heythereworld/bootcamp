@@ -1,0 +1,38 @@
+
+      /* Review rating checked */
+      .checked {
+          color: orange;
+      }
+
+      /* Colour swatch circles */
+      .circle {
+          height: 25px;
+          width: 25px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: inline-block;
+      }
+
+      /* Inline block needed so that review count does not go to next line  */
+      .review-count{
+          display: inline-block;
+      }
+
+      /* Make the hyperlink text colours black in keeping with feel of specification  */
+      a {
+          color: black;
+        }
+
+      /* If customer has visited hyperlink text colour should be black */
+      a:visited {
+          color: black;
+        }
+
+      /* Styling the cart button */
+      button {
+          background-color: black;
+          color: white;
+          border-radius: 200px;
+          width: 250px;
+          height: 50px;
+        }
