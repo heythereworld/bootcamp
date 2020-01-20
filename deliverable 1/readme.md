@@ -1,5 +1,5 @@
-Week 1 deliverable for Zaio Bootcamp. 
-HTML, CSS & JS Challenge
+# Week 1 deliverable for Zaio Bootcamp. 
+# HTML, CSS & JS Challenge
 
 Nemesis Team - Chris Pretorius
 
