@@ -1,3 +1,12 @@
+      /* Make the hyperlink text colours black in keeping with feel of specification  */
+      a {
+          color: black;
+        }
+
+      /* If customer has visited hyperlink text colour should be black */
+      a:visited {
+          color: black;
+        }
 
       /* Review rating checked */
       .checked {
@@ -11,22 +20,13 @@
           background-color: #fff;
           border-radius: 50%;
           display: inline-block;
+          margin-right: 10px; 
       }
 
       /* Inline block needed so that review count does not go to next line  */
       .review-count{
           display: inline-block;
       }
-
-      /* Make the hyperlink text colours black in keeping with feel of specification  */
-      a {
-          color: black;
-        }
-
-      /* If customer has visited hyperlink text colour should be black */
-      a:visited {
-          color: black;
-        }
 
       /* Styling the cart button */
       button {
