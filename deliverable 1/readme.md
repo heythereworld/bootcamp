@@ -13,10 +13,10 @@ The ‘Agree’ and ‘Cancel’ button should be placed as shown in the image b
 the pop should close and the ‘Add to Cart’ button must now say ‘Checkout now’. For more details see the images below. 
 
 # Documents in this folder
-index.html - HTML document for week 1 deliverable
-main.css - external style sheet
-index.php - required for Heroku hosting of static website
-index.json - required for Heroku hosting of static website
+index.html - HTML document for week 1 deliverable . 
+main.css - external style sheet . 
+index.php - required for Heroku hosting of static website . 
+index.json - required for Heroku hosting of static website . 
 
 # Required features
 1.	Similarity to specifications	
