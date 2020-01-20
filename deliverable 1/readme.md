@@ -1,6 +1,6 @@
 # Week 1 deliverable for Zaio Bootcamp
 
-HTML, CSS & JS Challenge
+HTML, CSS & JS Challenge.
 Nemesis Team - Chris Pretorius
 
 # Description from Specification
