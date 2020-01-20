@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Start of html document -->
+<html>
+    <head>
+        <!-- Importing bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Importing font awesome package which is used on the review stars -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Importing external CSS. External CSS promotes code modularity -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <!-- The HTML body -->
+    <body>
+        <!-- Product title -->
+        <h1>Hickies Originals</h1>
+        <div id="main-section">
+            <!-- 5 star rating -->
+            <div id="rating">
+              <span class="fa fa-star checked" style="font-size: 150%;"></span>
+              <span class="fa fa-star checked" style="font-size: 150%;"></span>
+              <span class="fa fa-star checked" style="font-size: 150%;"></span>
+              <span class="fa fa-star checked" style="font-size: 150%;"></span>
+              <span class="fa fa-star" style="font-size: 150%;"></span>
+            </div>
+            <div id="reviews" style="color:grey" class="review-count">1,293 reviews</div>
+            <div id="price" style="color: rgb(226, 79, 106); font-size: 200%;">$14.99</div>
+            <div id="originalprice" style="color:grey">$17.99</div>
+            <div id="discount" style="color:grey">25% OFF</div>
+        </div>
+        <h4>ONLINE EXCLUSIVE</h4><br>
+
+        <h4><b>COLOR: </b></h4>
+        <h4 id="label" ><b>select color</b></h4><br>
+
+        <!-- Swatch colours -->
+        <div id="swatchColours">
+          <!-- First line of Swatch colours. 11 colours in first line -->
+          <span class="circle" style="background-color: red;"></span>
+          <span class="circle" style="background-color: blueviolet;"></span>
+          <span class="circle" style="background-color: black;"></span>
+          <span class="circle" style="background-color: white;"></span>
+          <span class="circle" style="background-color: orange;"></span>
+          <span class="circle" style="background-color: yellow;"></span>
+          <span class="circle" style="background-color: blue"></span>
+          <span class="circle" style="background-color: chartreuse;"></span>
+          <span class="circle" style="background-color: coral;"></span>
+          <span class="circle" style="background-color: cyan;"></span>
+          <span class="circle" style="background-color: deeppink;"></span>
+          <!-- Second line of Swatch colours. 7 colours in second line -->
+          <span class="circle" style="background-color: chocolate;"></span>
+          <span class="circle" style="background-color: green;"></span>
+          <span class="circle" style="background-color: grey;"></span>
+          <span class="circle" style="background-color: maroon;"></span>
+          <span class="circle" style="background-color: plum;"></span>
+          <span class="circle" style="background-color: darkorange;"></span>
+          <span class="circle" style="background-color: pink;"></span>
+        </div>
+        <a href="#"><b>Size Guide</b></a> <br>
+        <a href="#"><b>Your Custom Fit</b></a> <br><br>
+        <button type="button" id="cartButton">Add To Cart</button>
+
+        <!-- Adding a line that stretches the widith of the page -->
+        <hr style="border: 1px solid black;">
+        <div>
+          <a href="#"><b>DETAILS</b></a>
+          <br>
+        </div>
+
+        <!-- Adding a line that stretches the widith of the page -->
+        <hr style="border: 1px solid black;">
+
+        <a href="#" id="needHelp" ><b>Need Help?</b></a> <br>
+        <a href="#"><b>Shipping & Returns</b></a>
+
+    </body>
+</html>
