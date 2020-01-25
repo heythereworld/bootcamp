@@ -3,5 +3,5 @@
 Nemesis Team - Chris Pretorius
 
 # Projects
-1. Deliverable 1: HTML & CSS Challenge
-2. Deliverable 2: Deliverable 1 + Javascript
+Deliverable 1: HTML & CSS Challenge
+Deliverable 2: HTMl, CSS & JS Challenge
