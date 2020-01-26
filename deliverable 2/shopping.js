@@ -31,7 +31,7 @@ class Colour {
         return this.quantity;
     }
     // Getter method which returns buttons for the details section when called
-    get button() {f
+    get button() {
         let butttonName = this.name.toLowerCase().replace(" ","-"); //converting space in colour names to hyphens for recognition by CSS
         return "<button class='circle button-" + butttonName + "' onclick=colorSelect('" + this.name + "');></button>";
     }
