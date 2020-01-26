@@ -1,1 +1,180 @@
-test
+<!DOCTYPE html>
+<!-- Start of html document -->
+<html>
+    <head>
+        <!-- charset = character set utf-8 is character encoding capable of encoding all characters on the web. It replaced ascii as the default character encoding -->
+        <meta charset="utf-8">
+        <!-- The viewport is the user's visible area of a web page. The width=device-width part sets the width of the page to follow the screen-width of the device. The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Page Title -->
+        <title>Hickies Original | Shoe Store</title>
+        <!-- Importing font awesome package which is used on the review stars -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Importing bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Importing external CSS. External CSS promotes code modularity -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <!-- The HTML body. As browser compiles HTML into DOM will run createColours method -->
+    <body onload="createColours()">
+        <div class="page-content">
+          <!-- Product title -->
+          <h1>Hickies Originals</h1>
+          <div id="info-section">
+              <!-- 5 star rating -->
+              <div>
+                  <div id="rating" style="display:inline-block; padding-left: 15px; margin-right: 30px;">
+                    <span class="fa fa-star checked" style="font-size: 120%;"></span>
+                    <span class="fa fa-star checked" style="font-size: 120%;"></span>
+                    <span class="fa fa-star checked" style="font-size: 120%;"></span>
+                    <span class="fa fa-star checked" style="font-size: 120%;"></span>
+                    <span class="fa fa-star" style="font-size: 120%;"></span>
+                  </div>
+                  <div id="reviews" style="color:#A0A0A0; display:inline-block;" class="review-count">1,293 reviews</div>
+              </div>
+              <!-- Second line -->
+              <div>
+                  <h2 id="price" style="color: rgb(226, 79, 106); font-size: 200%; display:inline-block; margin-right: 55px; font-weight: 500;">$14.99</h2>
+                  <div id="originalprice" style="color:	#A0A0A0; display:inline-block; margin-right: 35px;">$17.99</div>
+                  <div id="discount" style="color: #A0A0A0; display:inline-block; font-weight:600;">25% OFF</div>
+              </div>
+          </div>
+          <h5 style="padding-left: 15px; font-weight:400;">ONLINE EXCLUSIVE</h5>
+
+          <h4 style="display:inline-block;"><b>COLOR: </b></h4>
+          <h4 id="colourlabel1" style="display:inline-block;">Select Color</h4>
+
+          <!-- Swatch colours -->
+          <div id="swatchColours">
+              <button class="circle button-red" onclick="colourSelect('Red');"></button>
+              <button class="circle button-blue-violet" onclick="colourSelect('Blue Violet');"></button>
+              <button class="circle button-black" onclick="colourSelect('Black');"></button>
+              <button class="circle button-white" onclick="colourSelect('White');"></button>
+              <button class="circle button-orange" onclick="colourSelect('Orange');"></button>
+              <button class="circle button-yellow" onclick="colourSelect('Yellow');"></button>
+              <button class="circle button-blue" onclick="colourSelect('Blue');"></button>
+              <button class="circle button-chartreuse" onclick="colourSelect('Chartreuse');"></button>
+              <button class="circle button-coral" onclick="colourSelect('Coral');"></button>
+              <button class="circle button-cyan" onclick="colourSelect('Cyan');"></button>
+              <button class="circle button-deep-pink" onclick="colourSelect('Deep Pink');"></button>
+              <button class="circle button-chocolate" onclick="colourSelect('Chocolate');"></button>
+              <button class="circle button-green" onclick="colourSelect('Green');"></button>
+              <button class="circle button-grey" onclick="colourSelect('Grey');"></button>
+              <button class="circle button-maroon" onclick="colourSelect('Maroon');"></button>
+              <button class="circle button-plum" onclick="colourSelect('Plum');"></button>
+              <button class="circle button-dark-orange" onclick="colourSelect('Dark Orange');"></button>
+              <button class="circle button-pink" onclick="colourSelect('Pink');"></button>
+          </div>
+          <div style="margin-bottom:10px;">
+            <a href="https://www.finishline.com/media/landing-pages/sizing-chart/pdfs/footwear-sizing-tool.pdf" target="_blank"><b>Size Guide</b></a>
+          </div>
+          <div>
+            <a href="#"><b>Your Custom Fit</b></a>
+          </div>
+          <!-- Line containing the two buttons -->
+          <div style="margin-top: 15px; margin-bottom:30px;">
+            <button type="button" id="cartNumber"><strong>0</strong></button>
+            <button type="button" id="cartButton" data-toggle="modal" data-target="#shoppingModal" onclick="updateQuantity();"><strong>Add to Cart</strong></button>
+
+            <!-- Using Bootstrap’s JavaScript modal plugin to add the shopping dialog to the page -->
+            <div class="modal" id="shoppingModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Shopping cart modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                          <p>Please add the quantity of the item you have selected</p>
+                          <br> <!-- Line break-->
+                          <div>
+                              <!-- Colour name will be displayed here-->
+                              <span id="colourlabel2" style="margin: 50px; vertical-align: 10px;">Color selection</span>
+                              <!-- Minus button-->
+                              <button class="minusplus-button" onclick="decrement();">-</button>
+                              <!-- Quantity displayed here-->
+                              <span id="quantity" style="font-size: 30px; margin: 15px; vertical-align: 10px;">0</span>
+                              <!-- Addition button-->
+                              <button class="minusplus-button" onclick="increment();">+</button>
+                          </div>
+                          <br> <!-- Line break-->
+                          <div>
+                                  <button type="button" class="agree-button" data-dismiss="modal" onclick="updateCart();"><strong>Agree</strong></button>
+                                  <button type="button" class="cancel-button" data-dismiss="modal" onclick="resetQuantity();"><strong>Cancel</strong></button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Using Bootstrap’s JavaScript modal plugin to add the checkout dialog to the page -->
+          <div class="modal" id="checkoutModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h3 class="modal-title">Shopping Cart</h4>
+                      </div>
+                      <!-- Placeholder for showing shopping cart summary -->
+                      <div id="summary" class="modal-body">
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" data-dismiss="modal">Proceed to Checkout</button>
+                          <button type="button" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Adding a line that stretches the widith of the page -->
+          <hr style="border: 0.5px solid black;">
+
+          <div id="details" style="margin-top: 25px; margin-bottom:25px;">
+            <a href="#" style="padding: 15px;"><strong>DETAILS</strong></a>
+          </div>
+
+          <!-- Adding a line that stretches the widith of the page -->
+          <hr style="border: 0.5px solid black;">
+
+          <button class="text-button" data-toggle="modal" data-target="#helpModal"><strong>Need Help?</strong></button>
+          <div class="modal" id="helpModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Help</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>Visit our <a href="#">Help</a> page for answers</p>
+
+                      <p>Our hours of operation are:</p>
+
+                      <p>
+                          <strong>Working Hours:</strong>
+                          <br>
+                          Monday-Friday 8h00 – 18h00
+                          <br>
+                          Weekends Closed
+                          <br>
+                          Public Holidays  Closed
+                          <br>
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div>
+            <a href="#"><strong>Shipping & Returns</strong></a>
+          </div>
+        </div>
+
+        <!-- It is a best practice to put JavaScript <script> tags just before the closing </body> tag rather than in the <head> section of your HTML. The reason for this is that HTML loads from top to bottom -->
+        <script src="shopping.js"></script>
+
+    </body><!-- End of html document -->
+</html>
