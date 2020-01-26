@@ -1,0 +1,236 @@
+      /* Adding background image */
+      body {
+         background-image: url("images/background.png");
+         background-color: #cccccc;
+      }
+
+      /* Centering the content on page */
+      .page-content{
+        background-color: white;
+        margin: auto;
+        padding: 30px;
+        max-width:600px;
+        min-height: 900px;
+        height: auto !important;
+      }
+
+      /* Make the hyperlink text colours black in keeping with feel of specification  */
+      a {
+          color: black;
+          margin-bottom: 20px;
+        }
+
+      /* If customer has visited hyperlink text colour should be black */
+      a:visited {
+          color: black;
+        }
+
+      /* Adding space below Hickies Original */
+      h1{
+          margin-bottom: 15px;
+      }
+
+      /* Styling colour display section */
+      h4 {
+        font-size: 15px;
+      }
+
+      /* Styling colour name */
+      h4#colourlabel1 {
+        font-weight: normal;
+      }
+
+      /* Review rating checked */
+      .checked {
+          color: orange;
+      }
+
+      /* Adding space above price */
+      #price {
+          margin-top: 12px;
+      }
+
+      /* Adding strike through on original price (CSS trick) */
+      #originalprice {
+          text-decoration: line-through;
+      }
+
+      /* Inline block needed so that review count does not go to next line  */
+      .review-count{
+          display: inline-block;
+      }
+
+      /* Adding space before and after the circles */
+      #swatchColours{
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      /* Colour swatch circles */
+      .circle {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          border: none;
+          display: inline-block;
+          margin: 5px;
+      }
+
+      /* Colour swatch circles - hover over circle */
+      .circle:hover {
+          outline: none;
+          /* First have a smaller white border, then the grey border */
+          box-shadow:  0 0 0 2px rgb(255, 255, 255), 0 0 0 4px #4d536c;
+      }
+
+      /* Colour swatch circles - circle clicked */
+      .circle:focus {
+          outline: none;
+          /* First have a smaller white border, then the grey border */
+          box-shadow:  0 0 0 2px rgb(255, 255, 255), 0 0 0 4px #4d536c;
+      }
+
+      /* Styling the cart number button */
+      #cartNumber {
+          background-color: white;
+          color: black;
+          border-radius: 200px;
+          border-width: 1px;
+          border-color: black;
+          width: 75px;
+          height: 50px;
+          margin-right: 12px;
+        }
+
+      /* Styling the cart button */
+      #cartButton {
+          background-color: black;
+          color: white;
+          border-radius: 200px;
+          width: 290px;
+          height: 50px;
+        }
+
+      /* Removing styling of standard buttons for text buttons */
+      .text-button {
+          background:none;
+          border:none;
+          margin:0;
+          padding-left: 0px;
+          margin-bottom: 10px;
+          cursor: pointer;
+          color: black;
+        }
+
+      /* This section adds background colours to the circles */
+      .button-red {
+          background-color: red;
+      }
+
+      .button-blue-violet {
+          background-color: blueviolet;
+      }
+
+      .button-black {
+          background-color: black;
+      }
+
+      .button-white {
+          background-color: white;
+      }
+
+      .button-orange {
+          background-color: orange;
+      }
+
+      .button-yellow {
+          background-color: yellow;
+      }
+
+      .button-blue {
+          background-color: blue;
+      }
+
+      .button-chartreuse {
+          background-color: chartreuse;
+      }
+
+      .button-coral {
+          background-color: coral;
+      }
+
+      .button-cyan {
+          background-color: cyan;
+      }
+
+      .button-deep-pink {
+          background-color: deeppink;
+      }
+
+      .button-chocolate {
+          background-color: chocolate;
+      }
+
+      .button-green {
+          background-color: green;
+      }
+
+      .button-grey {
+          background-color: grey;
+      }
+
+      .button-maroon {
+          background-color: maroon;
+      }
+
+      .button-plum {
+          background-color: plum;
+      }
+
+      .button-dark-orange {
+          background-color: darkorange;
+      }
+
+      .button-pink {
+          background-color: pink;
+      }
+
+      /* CSS code for plus and minus buttons */
+      .minusplus-button {
+          display: inline-block;
+          border: none;
+          border-radius: 50%;
+          font-size: 50px;
+          line-height: 50px;
+          background-color: black;
+          color: white;
+          width: 65px;
+          height: 50px;
+          margin: 0 auto;
+          padding: 0px;
+          text-align: center;
+          font-weight: bold;
+          padding-bottom: 12%;
+      }
+
+      /* If click on plus-minus buttons go grey for that second */
+      .minusplus-button:active {
+          background-color: darkgrey;
+      }
+
+      /* CSS so that the ugly edge isn't shown */
+      .minusplus-button:focus {
+          outline: none;
+      }
+
+      /* Styling the agree button of shopping modal */
+      .agree-button {
+          background-color: #D8E7D7;
+          border: 1px solid green;
+      }
+
+      /* Styling the cancel button of shopping modal */
+      .cancel-button {
+          background-color: #F2CFCF;
+          border: 1px solid #BF918F;
+      }
